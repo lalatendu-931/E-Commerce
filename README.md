@@ -438,28 +438,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📄 License
 
-This project is licensed under the **MIT License with Attribution Requirement**.
-
-You are free to use this code as a starting point for your own e-commerce website, but you **must give credit** to this repository. This can be done by:
-
-- Adding a credit line in your website footer
-- Mentioning the original repo in your About/Credits page
-- Referencing this repo in your project's README
-
-**You cannot claim this code as entirely your own original work.**
-
-See the [LICENSE](LICENSE) file for full details.
-
----
-
-## 👨‍💻 Author
-
-**E-Commerce Website Contributors**
-
-- Website: [Coming Soon]
-- Email: [Contact Email]
 
 ---
 
