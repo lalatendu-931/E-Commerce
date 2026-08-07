@@ -1,0 +1,76 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+/* Variants */
+.badge-default {
+  background: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.badge-primary {
+  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-red) 100%);
+  color: var(--white);
+}
+
+.badge-secondary {
+  background: var(--deep-blue);
+  color: var(--white);
+}
+
+.badge-success {
+  background: #e8f5e9;
+  color: var(--success);
+}
+
+.badge-warning {
+  background: #fff3e0;
+  color: var(--warning);
+}
+
+.badge-error {
+  background: #ffebee;
+  color: var(--error);
+}
+
+.badge-info {
+  background: #e3f2fd;
+  color: var(--info);
+}
+
+.badge-discount {
+  background: var(--primary-red);
+  color: var(--white);
+}
+
+.badge-new {
+  background: var(--accent-teal);
+  color: var(--white);
+}
+
+.badge-bestseller {
+  background: var(--accent-gold);
+  color: var(--dark-gray);
+}
+
+/* Sizes */
+.badge-small {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+}
+
+.badge-medium {
+  padding: 0.3rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+.badge-large {
+  padding: 0.4rem 1rem;
+  font-size: 0.875rem;
+}

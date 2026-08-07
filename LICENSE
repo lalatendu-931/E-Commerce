@@ -1,0 +1,88 @@
+MIT License with Attribution Requirement
+
+Copyright (c) 2026 E-Commerce Website Project
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+1. ATTRIBUTION REQUIREMENT
+
+   The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+   Additionally, any website, application, or project that uses this Software
+   (in whole or in substantial part) as a foundation or starting point MUST
+   include visible attribution to the original repository. This attribution
+   must be displayed in at least ONE of the following locations:
+
+   a) In the footer of the website/application with text similar to:
+      "Built using E-Commerce Website template"
+      or
+      "Based on github.com/[original-repo-owner]/ecommerce-website"
+
+   b) In an "About" or "Credits" page of the website/application
+
+   c) In the README file of any derived project's repository
+
+   The attribution must include a link to the original GitHub repository
+   when displayed on a website or in documentation.
+
+2. NO FALSE CLAIMS OF ORIGINAL AUTHORSHIP
+
+   You may NOT claim that you created the original Software. You may NOT
+   remove, obscure, or modify any attribution notices in the original
+   source code without adding your own attribution that acknowledges the
+   original work.
+
+   Derivative works must clearly indicate that changes were made from the
+   original Software.
+
+3. MODIFICATION AND COMMERCIAL USE
+
+   You ARE permitted to:
+   - Use this Software for commercial purposes
+   - Modify and adapt the Software for your own needs
+   - Distribute modified versions
+   - Use this as a starting point/template for your own e-commerce projects
+
+   You are NOT required to:
+   - Open source your modifications
+   - Share your changes back to the original repository
+
+4. DISCLAIMER
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+---
+
+SUMMARY (not legally binding, see above for actual terms):
+
+✅ You CAN:
+   - Use this code for personal or commercial projects
+   - Modify and customize it for your needs
+   - Use it as a template for your e-commerce website
+   - Distribute your modified version
+
+⚠️ You MUST:
+   - Keep the copyright notice in the code
+   - Give credit/attribution on your website or project
+   - Acknowledge this as the original source
+
+❌ You CANNOT:
+   - Claim you wrote the original code from scratch
+   - Remove all attribution and present it as entirely your own work
+   - Hold the authors liable for any issues
+
+---
+
+For questions about this license, please open an issue on the GitHub repository.

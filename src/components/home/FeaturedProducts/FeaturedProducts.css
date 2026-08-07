@@ -1,0 +1,142 @@
+/* Modern Featured Products - 2026 Design */
+.featured-products {
+  background: var(--off-white);
+}
+
+.featured-products .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: var(--space-10);
+  gap: var(--space-4);
+}
+
+.featured-products .section-header .section-title {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.featured-products .section-header .section-title h2 {
+  margin-bottom: var(--space-2);
+}
+
+.featured-products .section-header .section-title p {
+  margin: 0;
+}
+
+.featured-products .view-all-link {
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-8);
+  margin-bottom: var(--space-10);
+}
+
+/* Store Visit CTA */
+.store-visit-cta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-6) var(--space-8);
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border-radius: var(--radius-xl);
+  border: 2px solid rgba(255, 183, 3, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.store-visit-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 183, 3, 0.3) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cta-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-message {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-message h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: var(--space-2);
+}
+
+.cta-message p {
+  color: var(--text-secondary);
+  font-size: 0.938rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.store-visit-cta a {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-5);
+  }
+
+  .featured-products .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+}
+
+@media (max-width: 640px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  .store-visit-cta {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-6) var(--space-5);
+    gap: var(--space-4);
+  }
+  
+  .cta-message h4 {
+    font-size: 1.125rem;
+  }
+  
+  .store-visit-cta a {
+    width: 100%;
+  }
+  
+  .store-visit-cta a button {
+    width: 100%;
+    justify-content: center;
+  }
+}

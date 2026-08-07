@@ -1,0 +1,286 @@
+/* Modern Repair Highlight - 2026 Design */
+.repair-highlight {
+  background: linear-gradient(135deg, var(--deep-blue) 0%, #001833 100%);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.repair-highlight::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.repair-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -50px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 183, 3, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.repair-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Section Badge */
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background: rgba(255, 107, 53, 0.15);
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  border-radius: var(--radius-full);
+  color: var(--accent-yellow);
+  font-weight: 600;
+  font-size: 0.813rem;
+  margin-bottom: var(--space-5);
+}
+
+.repair-info h2 {
+  font-size: 2.75rem;
+  color: var(--white);
+  margin-bottom: var(--space-5);
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.repair-description {
+  font-size: 1.063rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  margin-bottom: var(--space-8);
+}
+
+/* Repair List */
+.repair-list {
+  margin-bottom: var(--space-6);
+}
+
+.repair-list h4,
+.no-repair-list h4 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.938rem;
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+  color: var(--white);
+}
+
+.repair-list h4 svg {
+  color: #4ade80;
+}
+
+.no-repair-list h4 svg {
+  color: #f87171;
+}
+
+.repair-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.repair-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  transition: all 0.3s ease;
+}
+
+.repair-list li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(4px);
+}
+
+.repair-name {
+  font-weight: 500;
+  font-size: 0.938rem;
+}
+
+.repair-price {
+  font-size: 0.875rem;
+  color: var(--accent-yellow);
+  font-weight: 700;
+  padding: 4px 12px;
+  background: rgba(255, 183, 3, 0.15);
+  border-radius: var(--radius-full);
+}
+
+/* No Repair List */
+.no-repair-list {
+  margin-bottom: var(--space-8);
+}
+
+.no-repair-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.no-repair-tag {
+  padding: 6px 12px;
+  background: rgba(248, 113, 113, 0.1);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+  border-radius: var(--radius-full);
+  font-size: 0.813rem;
+  color: #fecaca;
+  font-weight: 500;
+}
+
+/* Visual Side */
+.repair-visual {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.repair-card-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.repair-card {
+  padding: var(--space-5) var(--space-6);
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-layer-1);
+}
+
+.repair-card:hover {
+  transform: translateX(12px);
+  box-shadow: var(--shadow-layer-2);
+}
+
+.repair-card-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 107, 53, 0.05) 100%);
+  border-radius: var(--radius-lg);
+  flex-shrink: 0;
+}
+
+.repair-card h4 {
+  font-size: 1.063rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 4px;
+}
+
+.repair-card p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.repair-time {
+  margin-left: auto;
+  padding: 6px 14px;
+  background: var(--primary-blue);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+/* Store Note */
+.store-note {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  background: rgba(255, 183, 3, 0.1);
+  border: 1px solid rgba(255, 183, 3, 0.2);
+  border-radius: var(--radius-xl);
+}
+
+.note-icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.store-note p {
+  margin: 0;
+  font-size: 0.938rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.store-note strong {
+  color: var(--accent-yellow);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .repair-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .repair-info h2 {
+    font-size: 2.25rem;
+  }
+  
+  .repair-visual {
+    order: -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .repair-info h2 {
+    font-size: 1.875rem;
+  }
+
+  .repair-card {
+    padding: var(--space-4);
+    flex-wrap: wrap;
+  }
+  
+  .repair-card-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+  }
+
+  .repair-time {
+    margin-left: 0;
+    margin-top: var(--space-3);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .repair-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+}

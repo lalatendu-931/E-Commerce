@@ -1,0 +1,379 @@
+.spare-parts-page {
+  min-height: 100vh;
+}
+
+/* Hero */
+.spare-hero {
+  background: linear-gradient(135deg, var(--deep-blue) 0%, #001d3d 100%);
+  color: var(--white);
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.spare-hero h1 {
+  font-size: 2.25rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.spare-hero p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+}
+
+/* Notice */
+.spare-notice {
+  padding: 1.5rem 0;
+  background: #fff8e1;
+}
+
+.spare-notice .notice-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--accent-gold);
+}
+
+.spare-notice .notice-card svg {
+  color: var(--accent-gold);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.notice-text strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.notice-text p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Layout */
+.spare-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+}
+
+/* Sidebar */
+.spare-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-section {
+  background: var(--white);
+  padding: 1.25rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.sidebar-section h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--light-gray);
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.search-box:focus-within {
+  border-color: var(--primary-orange);
+  background: var(--white);
+}
+
+.search-box svg {
+  color: #999;
+  flex-shrink: 0;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  background: none;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.search-box button {
+  background: none;
+  padding: 0;
+  color: #999;
+}
+
+.search-box button:hover {
+  color: var(--dark-gray);
+}
+
+/* Type List */
+.type-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.type-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: var(--light-gray);
+  border-radius: var(--radius-md);
+  text-align: left;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.type-btn:hover {
+  background: var(--off-white);
+}
+
+.type-btn.active {
+  background: var(--primary-orange);
+  color: var(--white);
+}
+
+/* Store Contact */
+.store-contact {
+  background: #e8f5e9;
+  border: 2px solid var(--success);
+}
+
+.store-contact h3 {
+  color: var(--success);
+}
+
+.store-contact p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Main Content */
+.spare-main {
+  min-height: 400px;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.results-count {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.clear-filter {
+  background: none;
+  color: var(--primary-orange);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.clear-filter:hover {
+  text-decoration: underline;
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--light-gray);
+  border-radius: var(--radius-xl);
+}
+
+.no-results svg {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.no-results h3 {
+  margin-bottom: 0.5rem;
+}
+
+.no-results p {
+  color: #666;
+}
+
+/* Parts Grid */
+.parts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Part Card */
+.part-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.part-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.part-image {
+  height: 120px;
+  background: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.part-image span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-orange);
+  opacity: 0.5;
+}
+
+.part-info {
+  padding: 1rem;
+}
+
+.part-info h4 {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+}
+
+.part-brand {
+  font-size: 0.8rem;
+  color: #999;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.part-pricing {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.part-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--deep-blue);
+}
+
+.part-mrp {
+  font-size: 0.85rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.part-discount {
+  font-size: 0.75rem;
+  color: var(--success);
+  font-weight: 600;
+}
+
+.part-stock {
+  margin-bottom: 0.75rem;
+}
+
+.part-stock .in-stock {
+  color: var(--success);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.part-stock .out-of-stock {
+  color: var(--error);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.part-actions {
+  margin-top: auto;
+}
+
+/* Visit Store CTA */
+.visit-store-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, var(--off-white) 0%, #fff 100%);
+  border: 2px solid var(--medium-gray);
+  border-radius: var(--radius-xl);
+}
+
+.visit-store-cta svg {
+  color: var(--primary-orange);
+  flex-shrink: 0;
+}
+
+.cta-text {
+  flex: 1;
+}
+
+.cta-text h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.cta-text p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .spare-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .spare-sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .sidebar-section {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .parts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .spare-notice .notice-card {
+    flex-direction: column;
+  }
+
+  .parts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visit-store-cta {
+    flex-direction: column;
+    text-align: center;
+  }
+}
